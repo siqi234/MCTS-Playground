@@ -258,30 +258,32 @@ if __name__ == '__main__':
     # s = TTTState(board=tuple([0]*9), player=+1)
 
     # Create board game
-    s = TTTState(
-        board=(
-            -1,  0,  0,
-            +1, -1,  0,
-             0, +1,  0
-        ),
-        player=+1  # X to move must block at 8
-    )
-
     # s = TTTState(
     #     board=(
     #         -1,  0,  0,
-    #         +1, +1,  0,
-    #          0, -1,  0
+    #         +1, -1,  0,
+    #          0, +1,  0
     #     ),
-    #     player=+1  # Win at 5
+    #     player=+1  # X to move must block at 8
     # )
+
+    s = TTTState(
+        board=(
+            -1,  0,  0,
+            +1, +1,  0,
+             0, -1,  0
+        ),
+        player=+1  # Win at 5
+    )
+    
+    print(render(s.board))
 
 
     # Run MCTS
     a, root = mcts_search(s, iters=5000)
-    export_tree_json(root, "mcts_tree_block.json", max_nodes=5000)
-    export_tree_dot(root, "mcts_tree_block.dot", max_nodes=5000)
-    print_tree(root, depth=3, top_k=5)
+    # export_tree_json(root, "mcts_tree_block.json", max_nodes=5000)
+    # export_tree_dot(root, "mcts_tree_block.dot", max_nodes=5000)
+    # print_tree(root, depth=3, top_k=5)
 
     print("Chosen action:", a)
     print(render(next_state(s, a).board))

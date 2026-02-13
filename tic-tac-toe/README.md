@@ -83,7 +83,33 @@ Example: one move by each player (assume user is always X)
 
     return TTTState(board=tuple(b), player=-s.player)
 
-- Return the next state $s_2$ (the board) after taking the action $a$ at the current state $s$.
+- Return the next state $s_2$ (the board and the player) after taking the action $a$ at the current state $s$.
 
-****
+**def winner(board: Tuple[int, ...]) -> int**
 
+    for (i, j, k) in WIN_LINES:
+        s = board[i] + board[j] + board[k]
+        if s == 3:
+            return +1
+        if s == -3:
+            return -1
+    return 0
+
+- Return +1 if X wins, -1 if O wins, and 0 if no winner
+
+**def is_terminal(s: TTTState) -> bool**
+
+    return winner(s.board) !=0 or all(v !=0 for v in s.board)
+
+-  Return $True$ if there is a winner, otherwise continue searching
+
+**def terminal_value_from_X(s: TTTState) -> float**
+
+    w = winner(s.board)
+    if w == +1:
+        return 1.0
+    if w == -1:
+        return -1.0
+    return 0.0
+
+- Returns a number (float) that represents the game outcome from X’s perspective.
