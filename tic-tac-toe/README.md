@@ -31,6 +31,12 @@ from typing import List, Optional, Dict, Tuple
 
 We will have:
 
+    @dataclass(frozen=True)
+    class TTTState:
+    
+        board: Tuple[int, ...] = field(default_factory=lambda: (0,)*9)
+        player: int = +1            # +1 or -1
+
 - A board of 3x3 grid, 9 cells
     - Stored as a length-9 list/tuple of integers:
         - `0` = empty
@@ -62,6 +68,11 @@ Example: one move by each player (assume user is always X)
 - Returns all valid moves from the current state.
 - A move is legal if the target cell is empty/0. The function scans the 9 cells and returns the indices of empty ones.
 
-**def legal_action(state) -> List[int]**
+**def next_state(state, action) -> state**
+
+    b = list(s.board)
+    b[a] = s.player
+
+    return TTTState(board=tuple(b), player=-s.player)
 
 
