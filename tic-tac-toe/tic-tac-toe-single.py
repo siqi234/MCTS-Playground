@@ -267,25 +267,37 @@ if __name__ == '__main__':
         player=+1  # X to move must block at 8
     )
 
-    # # Run MCTS
-    # a, root = mcts_search(s, iters=5000)
-    # export_tree_json(root, "mcts_tree.json", max_nodes=5000)
-    # export_tree_dot(root, "mcts_tree.dot", max_nodes=300)
-    # print_tree(root, depth=3, top_k=5)
+    # s = TTTState(
+    #     board=(
+    #         -1,  0,  0,
+    #         +1, +1,  0,
+    #          0, -1,  0
+    #     ),
+    #     player=+1  # Win at 5
+    # )
 
-    # print("Chosen action:", a)
-    # print(render(next_state(s, a).board))
+
+    # Run MCTS
+    a, root = mcts_search(s, iters=5000)
+    export_tree_json(root, "mcts_tree_block.json", max_nodes=5000)
+    export_tree_dot(root, "mcts_tree_block.dot", max_nodes=5000)
+    print_tree(root, depth=3, top_k=5)
+
+    print("Chosen action:", a)
+    print(render(next_state(s, a).board))
 
 
-    # # test legal actions
-    legal_actions = legal_action(s)
-    print("Legal actions:", legal_actions)
+    # # # test legal actions
+    # legal_actions = legal_action(s)
+    # print("Legal actions:", legal_actions)
 
-    # test next state
-    a = 2
-    s2 = next_state(s, a)
-    print("Next state after action", a)
-    print(render(s2.board))
+    # # test next state
+    # a = 2
+    # s2 = next_state(s, a)
+    # print("Next state after action", a)
+    # print(render(s2.board))
+
+
 
 
 
