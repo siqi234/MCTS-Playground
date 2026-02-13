@@ -60,6 +60,14 @@ Example: one move by each player (assume user is always X)
              0  0  0   |   . . .
              0 -1  0   |   . O .
 
+**WIN_LINES**
+    
+    WIN_LINES = [
+            (0,1,2),(3,4,5),(6,7,8), # horizontals 
+            (0,3,6),(1,4,7),(2,5,8), # verticals 
+            (0,4,8),(2,4,6)          # diagonals 
+        ]
+- Save the lines that once occupied player wins. 
 
 **def legal_action(state) -> List[int]**
     
@@ -68,11 +76,14 @@ Example: one move by each player (assume user is always X)
 - Returns all valid moves from the current state.
 - A move is legal if the target cell is empty/0. The function scans the 9 cells and returns the indices of empty ones.
 
-**def next_state(state, action) -> state**
+**def next_state(s: state, a: action) -> s2: state**
 
     b = list(s.board)
     b[a] = s.player
 
     return TTTState(board=tuple(b), player=-s.player)
 
+- Return the next state $s_2$ (the board) after taking the action $a$ at the current state $s$.
+
+****
 
