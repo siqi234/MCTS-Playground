@@ -1,0 +1,4130 @@
+[
+    {
+        "step": 0,
+        "current_state": 0,
+        "chosen_action": 3,
+        "tree_snapshot": {
+            "state": 0,
+            "action_from_parent": null,
+            "visits": 1000,
+            "total_value": 11.0,
+            "win_rate": 0.011,
+            "children": [
+                {
+                    "state": 0,
+                    "action_from_parent": 3,
+                    "visits": 263,
+                    "total_value": 5.0,
+                    "win_rate": 0.019,
+                    "children": [
+                        {
+                            "state": 0,
+                            "action_from_parent": 3,
+                            "visits": 65,
+                            "total_value": 1.0,
+                            "win_rate": 0.0154,
+                            "children": [
+                                {
+                                    "state": 1,
+                                    "action_from_parent": 3,
+                                    "visits": 17,
+                                    "total_value": 1.0,
+                                    "win_rate": 0.0588,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 2,
+                                    "visits": 16,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 1,
+                                    "action_from_parent": 1,
+                                    "visits": 16,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 4,
+                                    "action_from_parent": 0,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 4,
+                            "action_from_parent": 2,
+                            "visits": 61,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": [
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 3,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 8,
+                                    "action_from_parent": 2,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 4,
+                                    "action_from_parent": 1,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 8,
+                                    "action_from_parent": 0,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 4,
+                            "action_from_parent": 1,
+                            "visits": 68,
+                            "total_value": 2.0,
+                            "win_rate": 0.0294,
+                            "children": [
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 3,
+                                    "visits": 18,
+                                    "total_value": 1.0,
+                                    "win_rate": 0.0556,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 5,
+                                    "action_from_parent": 2,
+                                    "visits": 16,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 8,
+                                    "action_from_parent": 1,
+                                    "visits": 17,
+                                    "total_value": 1.0,
+                                    "win_rate": 0.0588,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 8,
+                                    "action_from_parent": 0,
+                                    "visits": 16,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 4,
+                            "action_from_parent": 0,
+                            "visits": 68,
+                            "total_value": 2.0,
+                            "win_rate": 0.0294,
+                            "children": [
+                                {
+                                    "state": 5,
+                                    "action_from_parent": 3,
+                                    "visits": 16,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 2,
+                                    "visits": 16,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 8,
+                                    "action_from_parent": 1,
+                                    "visits": 18,
+                                    "total_value": 1.0,
+                                    "win_rate": 0.0556,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 8,
+                                    "action_from_parent": 0,
+                                    "visits": 17,
+                                    "total_value": 1.0,
+                                    "win_rate": 0.0588,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "state": 4,
+                    "action_from_parent": 2,
+                    "visits": 240,
+                    "total_value": 1.0,
+                    "win_rate": 0.0042,
+                    "children": [
+                        {
+                            "state": 4,
+                            "action_from_parent": 3,
+                            "visits": 59,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": [
+                                {
+                                    "state": 5,
+                                    "action_from_parent": 3,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 2,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 4,
+                                    "action_from_parent": 1,
+                                    "visits": 14,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 8,
+                                    "action_from_parent": 0,
+                                    "visits": 14,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 8,
+                            "action_from_parent": 2,
+                            "visits": 59,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": [
+                                {
+                                    "state": 4,
+                                    "action_from_parent": 3,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 12,
+                                    "action_from_parent": 2,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 12,
+                                    "action_from_parent": 1,
+                                    "visits": 14,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 4,
+                                    "action_from_parent": 0,
+                                    "visits": 14,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 4,
+                            "action_from_parent": 1,
+                            "visits": 59,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": [
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 3,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 5,
+                                    "action_from_parent": 2,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 5,
+                                    "action_from_parent": 1,
+                                    "visits": 14,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 8,
+                                    "action_from_parent": 0,
+                                    "visits": 14,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 0,
+                            "action_from_parent": 0,
+                            "visits": 62,
+                            "total_value": 1.0,
+                            "win_rate": 0.0161,
+                            "children": [
+                                {
+                                    "state": 1,
+                                    "action_from_parent": 3,
+                                    "visits": 16,
+                                    "total_value": 1.0,
+                                    "win_rate": 0.0625,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 1,
+                                    "action_from_parent": 2,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 4,
+                                    "action_from_parent": 1,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 0,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "state": 4,
+                    "action_from_parent": 1,
+                    "visits": 257,
+                    "total_value": 4.0,
+                    "win_rate": 0.0156,
+                    "children": [
+                        {
+                            "state": 5,
+                            "action_from_parent": 3,
+                            "visits": 62,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": []
+                        },
+                        {
+                            "state": 5,
+                            "action_from_parent": 2,
+                            "visits": 61,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": []
+                        },
+                        {
+                            "state": 4,
+                            "action_from_parent": 1,
+                            "visits": 68,
+                            "total_value": 2.0,
+                            "win_rate": 0.0294,
+                            "children": [
+                                {
+                                    "state": 4,
+                                    "action_from_parent": 3,
+                                    "visits": 16,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 2,
+                                    "visits": 19,
+                                    "total_value": 2.0,
+                                    "win_rate": 0.1053,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 5,
+                                    "action_from_parent": 1,
+                                    "visits": 16,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 4,
+                                    "action_from_parent": 0,
+                                    "visits": 16,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 0,
+                            "action_from_parent": 0,
+                            "visits": 65,
+                            "total_value": 1.0,
+                            "win_rate": 0.0154,
+                            "children": [
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 3,
+                                    "visits": 16,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 4,
+                                    "action_from_parent": 2,
+                                    "visits": 17,
+                                    "total_value": 1.0,
+                                    "win_rate": 0.0588,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 1,
+                                    "visits": 16,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 0,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "state": 0,
+                    "action_from_parent": 0,
+                    "visits": 240,
+                    "total_value": 1.0,
+                    "win_rate": 0.0042,
+                    "children": [
+                        {
+                            "state": 0,
+                            "action_from_parent": 3,
+                            "visits": 62,
+                            "total_value": 1.0,
+                            "win_rate": 0.0161,
+                            "children": [
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 3,
+                                    "visits": 16,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 1,
+                                    "action_from_parent": 2,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 1,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 4,
+                                    "action_from_parent": 0,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 4,
+                            "action_from_parent": 2,
+                            "visits": 59,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": [
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 3,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 2,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 4,
+                                    "action_from_parent": 1,
+                                    "visits": 14,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 0,
+                                    "visits": 14,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 0,
+                            "action_from_parent": 1,
+                            "visits": 59,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": [
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 3,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 1,
+                                    "action_from_parent": 2,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 4,
+                                    "action_from_parent": 1,
+                                    "visits": 14,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 0,
+                                    "visits": 14,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 4,
+                            "action_from_parent": 0,
+                            "visits": 59,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": [
+                                {
+                                    "state": 5,
+                                    "action_from_parent": 3,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 5,
+                                    "action_from_parent": 2,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 4,
+                                    "action_from_parent": 1,
+                                    "visits": 14,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 0,
+                                    "visits": 14,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "step": 1,
+        "current_state": 1,
+        "chosen_action": 3,
+        "tree_snapshot": {
+            "state": 1,
+            "action_from_parent": null,
+            "visits": 1000,
+            "total_value": 6.0,
+            "win_rate": 0.006,
+            "children": [
+                {
+                    "state": 1,
+                    "action_from_parent": 3,
+                    "visits": 259,
+                    "total_value": 3.0,
+                    "win_rate": 0.0116,
+                    "children": [
+                        {
+                            "state": 0,
+                            "action_from_parent": 3,
+                            "visits": 62,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": [
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 3,
+                                    "visits": 16,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 2,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 4,
+                                    "action_from_parent": 1,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 0,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 5,
+                            "action_from_parent": 2,
+                            "visits": 62,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": []
+                        },
+                        {
+                            "state": 0,
+                            "action_from_parent": 1,
+                            "visits": 72,
+                            "total_value": 3.0,
+                            "win_rate": 0.0417,
+                            "children": [
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 3,
+                                    "visits": 18,
+                                    "total_value": 1.0,
+                                    "win_rate": 0.0556,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 2,
+                                    "visits": 17,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 1,
+                                    "action_from_parent": 1,
+                                    "visits": 18,
+                                    "total_value": 1.0,
+                                    "win_rate": 0.0556,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 0,
+                                    "visits": 18,
+                                    "total_value": 1.0,
+                                    "win_rate": 0.0556,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 0,
+                            "action_from_parent": 0,
+                            "visits": 62,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": [
+                                {
+                                    "state": 1,
+                                    "action_from_parent": 3,
+                                    "visits": 16,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 1,
+                                    "action_from_parent": 2,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 1,
+                                    "action_from_parent": 1,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 0,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "state": 1,
+                    "action_from_parent": 2,
+                    "visits": 241,
+                    "total_value": 0.0,
+                    "win_rate": 0.0,
+                    "children": [
+                        {
+                            "state": 0,
+                            "action_from_parent": 3,
+                            "visits": 60,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": [
+                                {
+                                    "state": 1,
+                                    "action_from_parent": 3,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 2,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 4,
+                                    "action_from_parent": 1,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 4,
+                                    "action_from_parent": 0,
+                                    "visits": 14,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 1,
+                            "action_from_parent": 2,
+                            "visits": 60,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": [
+                                {
+                                    "state": 2,
+                                    "action_from_parent": 3,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 1,
+                                    "action_from_parent": 2,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 1,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 1,
+                                    "action_from_parent": 0,
+                                    "visits": 14,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 5,
+                            "action_from_parent": 1,
+                            "visits": 60,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": []
+                        },
+                        {
+                            "state": 1,
+                            "action_from_parent": 0,
+                            "visits": 60,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": [
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 3,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 5,
+                                    "action_from_parent": 2,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 5,
+                                    "action_from_parent": 1,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 5,
+                                    "action_from_parent": 0,
+                                    "visits": 14,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "state": 0,
+                    "action_from_parent": 1,
+                    "visits": 259,
+                    "total_value": 3.0,
+                    "win_rate": 0.0116,
+                    "children": [
+                        {
+                            "state": 0,
+                            "action_from_parent": 3,
+                            "visits": 65,
+                            "total_value": 1.0,
+                            "win_rate": 0.0154,
+                            "children": [
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 3,
+                                    "visits": 16,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 1,
+                                    "action_from_parent": 2,
+                                    "visits": 16,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 1,
+                                    "action_from_parent": 1,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 0,
+                                    "visits": 17,
+                                    "total_value": 1.0,
+                                    "win_rate": 0.0588,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 0,
+                            "action_from_parent": 2,
+                            "visits": 62,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": [
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 3,
+                                    "visits": 16,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 1,
+                                    "action_from_parent": 2,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 4,
+                                    "action_from_parent": 1,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 0,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 4,
+                            "action_from_parent": 1,
+                            "visits": 62,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": [
+                                {
+                                    "state": 4,
+                                    "action_from_parent": 3,
+                                    "visits": 16,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 2,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 8,
+                                    "action_from_parent": 1,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 4,
+                                    "action_from_parent": 0,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 4,
+                            "action_from_parent": 0,
+                            "visits": 69,
+                            "total_value": 2.0,
+                            "win_rate": 0.029,
+                            "children": [
+                                {
+                                    "state": 4,
+                                    "action_from_parent": 3,
+                                    "visits": 18,
+                                    "total_value": 1.0,
+                                    "win_rate": 0.0556,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 2,
+                                    "visits": 16,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 4,
+                                    "action_from_parent": 1,
+                                    "visits": 16,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 8,
+                                    "action_from_parent": 0,
+                                    "visits": 18,
+                                    "total_value": 1.0,
+                                    "win_rate": 0.0556,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "state": 0,
+                    "action_from_parent": 0,
+                    "visits": 241,
+                    "total_value": 0.0,
+                    "win_rate": 0.0,
+                    "children": [
+                        {
+                            "state": 0,
+                            "action_from_parent": 3,
+                            "visits": 60,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": [
+                                {
+                                    "state": 1,
+                                    "action_from_parent": 3,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 4,
+                                    "action_from_parent": 2,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 4,
+                                    "action_from_parent": 1,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 0,
+                                    "visits": 14,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 4,
+                            "action_from_parent": 2,
+                            "visits": 60,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": [
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 3,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 5,
+                                    "action_from_parent": 2,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 4,
+                                    "action_from_parent": 1,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 8,
+                                    "action_from_parent": 0,
+                                    "visits": 14,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 4,
+                            "action_from_parent": 1,
+                            "visits": 60,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": [
+                                {
+                                    "state": 5,
+                                    "action_from_parent": 3,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 2,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 8,
+                                    "action_from_parent": 1,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 8,
+                                    "action_from_parent": 0,
+                                    "visits": 14,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 4,
+                            "action_from_parent": 0,
+                            "visits": 60,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": [
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 3,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 5,
+                                    "action_from_parent": 2,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 5,
+                                    "action_from_parent": 1,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 4,
+                                    "action_from_parent": 0,
+                                    "visits": 14,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "step": 2,
+        "current_state": 2,
+        "chosen_action": 2,
+        "tree_snapshot": {
+            "state": 2,
+            "action_from_parent": null,
+            "visits": 1000,
+            "total_value": 112.0,
+            "win_rate": 0.112,
+            "children": [
+                {
+                    "state": 1,
+                    "action_from_parent": 3,
+                    "visits": 182,
+                    "total_value": 0.0,
+                    "win_rate": 0.0,
+                    "children": [
+                        {
+                            "state": 2,
+                            "action_from_parent": 3,
+                            "visits": 46,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": [
+                                {
+                                    "state": 1,
+                                    "action_from_parent": 3,
+                                    "visits": 12,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 2,
+                                    "action_from_parent": 2,
+                                    "visits": 11,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 3,
+                                    "action_from_parent": 1,
+                                    "visits": 11,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 2,
+                                    "action_from_parent": 0,
+                                    "visits": 11,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 5,
+                            "action_from_parent": 2,
+                            "visits": 45,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": []
+                        },
+                        {
+                            "state": 5,
+                            "action_from_parent": 1,
+                            "visits": 45,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": []
+                        },
+                        {
+                            "state": 5,
+                            "action_from_parent": 0,
+                            "visits": 45,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "state": 2,
+                    "action_from_parent": 2,
+                    "visits": 414,
+                    "total_value": 104.0,
+                    "win_rate": 0.2512,
+                    "children": [
+                        {
+                            "state": 2,
+                            "action_from_parent": 3,
+                            "visits": 54,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": [
+                                {
+                                    "state": 3,
+                                    "action_from_parent": 3,
+                                    "visits": 14,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 2,
+                                    "action_from_parent": 2,
+                                    "visits": 13,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 1,
+                                    "action_from_parent": 1,
+                                    "visits": 13,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 1,
+                                    "action_from_parent": 0,
+                                    "visits": 13,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 2,
+                            "action_from_parent": 2,
+                            "visits": 60,
+                            "total_value": 2.0,
+                            "win_rate": 0.0333,
+                            "children": [
+                                {
+                                    "state": 3,
+                                    "action_from_parent": 3,
+                                    "visits": 14,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 2,
+                                    "action_from_parent": 2,
+                                    "visits": 16,
+                                    "total_value": 1.0,
+                                    "win_rate": 0.0625,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 6,
+                                    "action_from_parent": 1,
+                                    "visits": 15,
+                                    "total_value": 1.0,
+                                    "win_rate": 0.0667,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 1,
+                                    "action_from_parent": 0,
+                                    "visits": 14,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 6,
+                            "action_from_parent": 1,
+                            "visits": 215,
+                            "total_value": 91.0,
+                            "win_rate": 0.4233,
+                            "children": [
+                                {
+                                    "state": 2,
+                                    "action_from_parent": 3,
+                                    "visits": 22,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 2,
+                                    "action_from_parent": 2,
+                                    "visits": 24,
+                                    "total_value": 1.0,
+                                    "win_rate": 0.0417,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 7,
+                                    "action_from_parent": 1,
+                                    "visits": 22,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 10,
+                                    "action_from_parent": 0,
+                                    "visits": 146,
+                                    "total_value": 90.0,
+                                    "win_rate": 0.6164,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 2,
+                            "action_from_parent": 0,
+                            "visits": 84,
+                            "total_value": 11.0,
+                            "win_rate": 0.131,
+                            "children": [
+                                {
+                                    "state": 2,
+                                    "action_from_parent": 3,
+                                    "visits": 18,
+                                    "total_value": 1.0,
+                                    "win_rate": 0.0556,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 6,
+                                    "action_from_parent": 2,
+                                    "visits": 23,
+                                    "total_value": 4.0,
+                                    "win_rate": 0.1739,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 6,
+                                    "action_from_parent": 1,
+                                    "visits": 16,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 6,
+                                    "action_from_parent": 0,
+                                    "visits": 26,
+                                    "total_value": 6.0,
+                                    "win_rate": 0.2308,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "state": 1,
+                    "action_from_parent": 1,
+                    "visits": 187,
+                    "total_value": 1.0,
+                    "win_rate": 0.0053,
+                    "children": [
+                        {
+                            "state": 1,
+                            "action_from_parent": 3,
+                            "visits": 46,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": [
+                                {
+                                    "state": 2,
+                                    "action_from_parent": 3,
+                                    "visits": 12,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 2,
+                                    "action_from_parent": 2,
+                                    "visits": 11,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 1,
+                                    "visits": 11,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 1,
+                                    "action_from_parent": 0,
+                                    "visits": 11,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 1,
+                            "action_from_parent": 2,
+                            "visits": 46,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": [
+                                {
+                                    "state": 2,
+                                    "action_from_parent": 3,
+                                    "visits": 12,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 1,
+                                    "action_from_parent": 2,
+                                    "visits": 11,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 5,
+                                    "action_from_parent": 1,
+                                    "visits": 11,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 1,
+                                    "action_from_parent": 0,
+                                    "visits": 11,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 0,
+                            "action_from_parent": 1,
+                            "visits": 48,
+                            "total_value": 1.0,
+                            "win_rate": 0.0208,
+                            "children": [
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 3,
+                                    "visits": 12,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 4,
+                                    "action_from_parent": 2,
+                                    "visits": 13,
+                                    "total_value": 1.0,
+                                    "win_rate": 0.0769,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 4,
+                                    "action_from_parent": 1,
+                                    "visits": 11,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 4,
+                                    "action_from_parent": 0,
+                                    "visits": 11,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 5,
+                            "action_from_parent": 0,
+                            "visits": 46,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "state": 2,
+                    "action_from_parent": 0,
+                    "visits": 217,
+                    "total_value": 7.0,
+                    "win_rate": 0.0323,
+                    "children": [
+                        {
+                            "state": 2,
+                            "action_from_parent": 3,
+                            "visits": 58,
+                            "total_value": 3.0,
+                            "win_rate": 0.0517,
+                            "children": [
+                                {
+                                    "state": 3,
+                                    "action_from_parent": 3,
+                                    "visits": 13,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 2,
+                                    "action_from_parent": 2,
+                                    "visits": 13,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 6,
+                                    "action_from_parent": 1,
+                                    "visits": 18,
+                                    "total_value": 3.0,
+                                    "win_rate": 0.1667,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 1,
+                                    "action_from_parent": 0,
+                                    "visits": 13,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 6,
+                            "action_from_parent": 2,
+                            "visits": 49,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": [
+                                {
+                                    "state": 7,
+                                    "action_from_parent": 3,
+                                    "visits": 12,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 7,
+                                    "action_from_parent": 2,
+                                    "visits": 12,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 5,
+                                    "action_from_parent": 1,
+                                    "visits": 12,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 2,
+                                    "action_from_parent": 0,
+                                    "visits": 12,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 6,
+                            "action_from_parent": 1,
+                            "visits": 49,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": [
+                                {
+                                    "state": 7,
+                                    "action_from_parent": 3,
+                                    "visits": 12,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 10,
+                                    "action_from_parent": 2,
+                                    "visits": 12,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 5,
+                                    "action_from_parent": 1,
+                                    "visits": 12,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 2,
+                                    "action_from_parent": 0,
+                                    "visits": 12,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 6,
+                            "action_from_parent": 0,
+                            "visits": 60,
+                            "total_value": 4.0,
+                            "win_rate": 0.0667,
+                            "children": [
+                                {
+                                    "state": 5,
+                                    "action_from_parent": 3,
+                                    "visits": 14,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 10,
+                                    "action_from_parent": 2,
+                                    "visits": 18,
+                                    "total_value": 3.0,
+                                    "win_rate": 0.1667,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 5,
+                                    "action_from_parent": 1,
+                                    "visits": 14,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 5,
+                                    "action_from_parent": 0,
+                                    "visits": 13,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "step": 3,
+        "current_state": 6,
+        "chosen_action": 0,
+        "tree_snapshot": {
+            "state": 6,
+            "action_from_parent": null,
+            "visits": 1000,
+            "total_value": 14.0,
+            "win_rate": 0.014,
+            "children": [
+                {
+                    "state": 7,
+                    "action_from_parent": 3,
+                    "visits": 231,
+                    "total_value": 0.0,
+                    "win_rate": 0.0,
+                    "children": []
+                },
+                {
+                    "state": 2,
+                    "action_from_parent": 2,
+                    "visits": 248,
+                    "total_value": 3.0,
+                    "win_rate": 0.0121,
+                    "children": [
+                        {
+                            "state": 2,
+                            "action_from_parent": 3,
+                            "visits": 59,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": [
+                                {
+                                    "state": 2,
+                                    "action_from_parent": 3,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 3,
+                                    "action_from_parent": 2,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 3,
+                                    "action_from_parent": 1,
+                                    "visits": 14,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 6,
+                                    "action_from_parent": 0,
+                                    "visits": 14,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 2,
+                            "action_from_parent": 2,
+                            "visits": 66,
+                            "total_value": 2.0,
+                            "win_rate": 0.0303,
+                            "children": [
+                                {
+                                    "state": 2,
+                                    "action_from_parent": 3,
+                                    "visits": 16,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 6,
+                                    "action_from_parent": 2,
+                                    "visits": 19,
+                                    "total_value": 2.0,
+                                    "win_rate": 0.1053,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 1,
+                                    "action_from_parent": 1,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 1,
+                                    "action_from_parent": 0,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 1,
+                            "action_from_parent": 1,
+                            "visits": 59,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": [
+                                {
+                                    "state": 2,
+                                    "action_from_parent": 3,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 5,
+                                    "action_from_parent": 2,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 5,
+                                    "action_from_parent": 1,
+                                    "visits": 14,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 5,
+                                    "action_from_parent": 0,
+                                    "visits": 14,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "state": 2,
+                            "action_from_parent": 0,
+                            "visits": 63,
+                            "total_value": 1.0,
+                            "win_rate": 0.0159,
+                            "children": [
+                                {
+                                    "state": 1,
+                                    "action_from_parent": 3,
+                                    "visits": 17,
+                                    "total_value": 1.0,
+                                    "win_rate": 0.0588,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 2,
+                                    "action_from_parent": 2,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 3,
+                                    "action_from_parent": 1,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 2,
+                                    "action_from_parent": 0,
+                                    "visits": 15,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "state": 5,
+                    "action_from_parent": 1,
+                    "visits": 230,
+                    "total_value": 0.0,
+                    "win_rate": 0.0,
+                    "children": []
+                },
+                {
+                    "state": 2,
+                    "action_from_parent": 0,
+                    "visits": 291,
+                    "total_value": 11.0,
+                    "win_rate": 0.0378,
+                    "children": [
+                        {
+                            "state": 1,
+                            "action_from_parent": 3,
+                            "visits": 70,
+                            "total_value": 2.0,
+                            "win_rate": 0.0286,
+                            "children": [
+                                {
+                                    "state": 2,
+                                    "action_from_parent": 3,
+                                    "visits": 20,
+                                    "total_value": 2.0,
+                                    "win_rate": 0.1,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 5,
+                                    "action_from_parent": 2,
+                                    "visits": 17,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 0,
+                                    "action_from_parent": 1,
+                                    "visits": 16,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 1,
+                                    "action_from_parent": 0,
+                                    "visits": 16,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 2,
+                            "action_from_parent": 2,
+                            "visits": 67,
+                            "total_value": 1.0,
+                            "win_rate": 0.0149,
+                            "children": [
+                                {
+                                    "state": 2,
+                                    "action_from_parent": 3,
+                                    "visits": 18,
+                                    "total_value": 1.0,
+                                    "win_rate": 0.0556,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 3,
+                                    "action_from_parent": 2,
+                                    "visits": 16,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 3,
+                                    "action_from_parent": 1,
+                                    "visits": 16,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 2,
+                                    "action_from_parent": 0,
+                                    "visits": 16,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 6,
+                            "action_from_parent": 1,
+                            "visits": 80,
+                            "total_value": 5.0,
+                            "win_rate": 0.0625,
+                            "children": [
+                                {
+                                    "state": 5,
+                                    "action_from_parent": 3,
+                                    "visits": 18,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 2,
+                                    "action_from_parent": 2,
+                                    "visits": 18,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 10,
+                                    "action_from_parent": 1,
+                                    "visits": 26,
+                                    "total_value": 5.0,
+                                    "win_rate": 0.1923,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 2,
+                                    "action_from_parent": 0,
+                                    "visits": 17,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 2,
+                            "action_from_parent": 0,
+                            "visits": 73,
+                            "total_value": 3.0,
+                            "win_rate": 0.0411,
+                            "children": [
+                                {
+                                    "state": 1,
+                                    "action_from_parent": 3,
+                                    "visits": 17,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 2,
+                                    "action_from_parent": 2,
+                                    "visits": 18,
+                                    "total_value": 1.0,
+                                    "win_rate": 0.0556,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 1,
+                                    "action_from_parent": 1,
+                                    "visits": 17,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 6,
+                                    "action_from_parent": 0,
+                                    "visits": 20,
+                                    "total_value": 2.0,
+                                    "win_rate": 0.1,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "step": 4,
+        "current_state": 10,
+        "chosen_action": 2,
+        "tree_snapshot": {
+            "state": 10,
+            "action_from_parent": null,
+            "visits": 1000,
+            "total_value": 846.0,
+            "win_rate": 0.846,
+            "children": [
+                {
+                    "state": 6,
+                    "action_from_parent": 3,
+                    "visits": 24,
+                    "total_value": 0.0,
+                    "win_rate": 0.0,
+                    "children": [
+                        {
+                            "state": 7,
+                            "action_from_parent": 3,
+                            "visits": 6,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": []
+                        },
+                        {
+                            "state": 7,
+                            "action_from_parent": 2,
+                            "visits": 6,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": []
+                        },
+                        {
+                            "state": 7,
+                            "action_from_parent": 1,
+                            "visits": 6,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": []
+                        },
+                        {
+                            "state": 5,
+                            "action_from_parent": 0,
+                            "visits": 5,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "state": 14,
+                    "action_from_parent": 2,
+                    "visits": 912,
+                    "total_value": 836.0,
+                    "win_rate": 0.9167,
+                    "children": [
+                        {
+                            "state": 15,
+                            "action_from_parent": 3,
+                            "visits": 541,
+                            "total_value": 541.0,
+                            "win_rate": 1.0,
+                            "children": []
+                        },
+                        {
+                            "state": 10,
+                            "action_from_parent": 2,
+                            "visits": 40,
+                            "total_value": 16.0,
+                            "win_rate": 0.4,
+                            "children": [
+                                {
+                                    "state": 6,
+                                    "action_from_parent": 3,
+                                    "visits": 6,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 11,
+                                    "action_from_parent": 2,
+                                    "visits": 6,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 11,
+                                    "action_from_parent": 1,
+                                    "visits": 6,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 14,
+                                    "action_from_parent": 0,
+                                    "visits": 21,
+                                    "total_value": 15.0,
+                                    "win_rate": 0.7143,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 14,
+                            "action_from_parent": 1,
+                            "visits": 59,
+                            "total_value": 32.0,
+                            "win_rate": 0.5424,
+                            "children": [
+                                {
+                                    "state": 13,
+                                    "action_from_parent": 3,
+                                    "visits": 8,
+                                    "total_value": 1.0,
+                                    "win_rate": 0.125,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 14,
+                                    "action_from_parent": 2,
+                                    "visits": 12,
+                                    "total_value": 4.0,
+                                    "win_rate": 0.3333,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 14,
+                                    "action_from_parent": 1,
+                                    "visits": 29,
+                                    "total_value": 24.0,
+                                    "win_rate": 0.8276,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 13,
+                                    "action_from_parent": 0,
+                                    "visits": 9,
+                                    "total_value": 2.0,
+                                    "win_rate": 0.2222,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 14,
+                            "action_from_parent": 0,
+                            "visits": 271,
+                            "total_value": 246.0,
+                            "win_rate": 0.9077,
+                            "children": [
+                                {
+                                    "state": 10,
+                                    "action_from_parent": 3,
+                                    "visits": 14,
+                                    "total_value": 2.0,
+                                    "win_rate": 0.1429,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 15,
+                                    "action_from_parent": 2,
+                                    "visits": 116,
+                                    "total_value": 116.0,
+                                    "win_rate": 1.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 15,
+                                    "action_from_parent": 1,
+                                    "visits": 115,
+                                    "total_value": 115.0,
+                                    "win_rate": 1.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 14,
+                                    "action_from_parent": 0,
+                                    "visits": 25,
+                                    "total_value": 12.0,
+                                    "win_rate": 0.48,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "state": 9,
+                    "action_from_parent": 1,
+                    "visits": 30,
+                    "total_value": 4.0,
+                    "win_rate": 0.1333,
+                    "children": [
+                        {
+                            "state": 10,
+                            "action_from_parent": 3,
+                            "visits": 6,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": [
+                                {
+                                    "state": 11,
+                                    "action_from_parent": 3,
+                                    "visits": 2,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 11,
+                                    "action_from_parent": 2,
+                                    "visits": 1,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 11,
+                                    "action_from_parent": 1,
+                                    "visits": 1,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 6,
+                                    "action_from_parent": 0,
+                                    "visits": 1,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "state": 13,
+                            "action_from_parent": 2,
+                            "visits": 6,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": [
+                                {
+                                    "state": 12,
+                                    "action_from_parent": 3,
+                                    "visits": 2,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 13,
+                                    "action_from_parent": 2,
+                                    "visits": 1,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 12,
+                                    "action_from_parent": 1,
+                                    "visits": 1,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 9,
+                                    "action_from_parent": 0,
+                                    "visits": 1,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "state": 13,
+                            "action_from_parent": 1,
+                            "visits": 7,
+                            "total_value": 1.0,
+                            "win_rate": 0.1429,
+                            "children": [
+                                {
+                                    "state": 12,
+                                    "action_from_parent": 3,
+                                    "visits": 2,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 9,
+                                    "action_from_parent": 2,
+                                    "visits": 2,
+                                    "total_value": 1.0,
+                                    "win_rate": 0.5,
+                                    "children": [
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 13,
+                                    "action_from_parent": 1,
+                                    "visits": 1,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 13,
+                                    "action_from_parent": 0,
+                                    "visits": 1,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "state": 13,
+                            "action_from_parent": 0,
+                            "visits": 10,
+                            "total_value": 3.0,
+                            "win_rate": 0.3,
+                            "children": [
+                                {
+                                    "state": 14,
+                                    "action_from_parent": 3,
+                                    "visits": 2,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 9,
+                                    "action_from_parent": 2,
+                                    "visits": 2,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 14,
+                                    "action_from_parent": 1,
+                                    "visits": 3,
+                                    "total_value": 2.0,
+                                    "win_rate": 0.6667,
+                                    "children": [
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 13,
+                                    "action_from_parent": 0,
+                                    "visits": 2,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "state": 6,
+                    "action_from_parent": 0,
+                    "visits": 34,
+                    "total_value": 6.0,
+                    "win_rate": 0.1765,
+                    "children": [
+                        {
+                            "state": 5,
+                            "action_from_parent": 3,
+                            "visits": 7,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": []
+                        },
+                        {
+                            "state": 2,
+                            "action_from_parent": 2,
+                            "visits": 7,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": [
+                                {
+                                    "state": 3,
+                                    "action_from_parent": 3,
+                                    "visits": 2,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 3,
+                                    "action_from_parent": 2,
+                                    "visits": 2,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 6,
+                                    "action_from_parent": 1,
+                                    "visits": 1,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 2,
+                                    "action_from_parent": 0,
+                                    "visits": 1,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "state": 10,
+                            "action_from_parent": 1,
+                            "visits": 13,
+                            "total_value": 6.0,
+                            "win_rate": 0.4615,
+                            "children": [
+                                {
+                                    "state": 9,
+                                    "action_from_parent": 3,
+                                    "visits": 2,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 11,
+                                    "action_from_parent": 2,
+                                    "visits": 2,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 14,
+                                    "action_from_parent": 1,
+                                    "visits": 3,
+                                    "total_value": 1.0,
+                                    "win_rate": 0.3333,
+                                    "children": [
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 14,
+                                    "action_from_parent": 0,
+                                    "visits": 5,
+                                    "total_value": 4.0,
+                                    "win_rate": 0.8,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 5,
+                            "action_from_parent": 0,
+                            "visits": 6,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "step": 5,
+        "current_state": 14,
+        "chosen_action": 2,
+        "tree_snapshot": {
+            "state": 14,
+            "action_from_parent": null,
+            "visits": 1000,
+            "total_value": 898.0,
+            "win_rate": 0.898,
+            "children": [
+                {
+                    "state": 10,
+                    "action_from_parent": 3,
+                    "visits": 41,
+                    "total_value": 13.0,
+                    "win_rate": 0.3171,
+                    "children": [
+                        {
+                            "state": 11,
+                            "action_from_parent": 3,
+                            "visits": 7,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": []
+                        },
+                        {
+                            "state": 6,
+                            "action_from_parent": 2,
+                            "visits": 8,
+                            "total_value": 1.0,
+                            "win_rate": 0.125,
+                            "children": [
+                                {
+                                    "state": 2,
+                                    "action_from_parent": 3,
+                                    "visits": 2,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 7,
+                                    "action_from_parent": 2,
+                                    "visits": 2,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 7,
+                                    "action_from_parent": 1,
+                                    "visits": 2,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 5,
+                                    "action_from_parent": 0,
+                                    "visits": 1,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "state": 14,
+                            "action_from_parent": 1,
+                            "visits": 19,
+                            "total_value": 12.0,
+                            "win_rate": 0.6316,
+                            "children": [
+                                {
+                                    "state": 10,
+                                    "action_from_parent": 3,
+                                    "visits": 2,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 14,
+                                    "action_from_parent": 2,
+                                    "visits": 5,
+                                    "total_value": 3.0,
+                                    "win_rate": 0.6,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 15,
+                                    "action_from_parent": 1,
+                                    "visits": 6,
+                                    "total_value": 6.0,
+                                    "win_rate": 1.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 14,
+                                    "action_from_parent": 0,
+                                    "visits": 5,
+                                    "total_value": 3.0,
+                                    "win_rate": 0.6,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 9,
+                            "action_from_parent": 0,
+                            "visits": 6,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": [
+                                {
+                                    "state": 8,
+                                    "action_from_parent": 3,
+                                    "visits": 2,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 10,
+                                    "action_from_parent": 2,
+                                    "visits": 1,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 8,
+                                    "action_from_parent": 1,
+                                    "visits": 1,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 5,
+                                    "action_from_parent": 0,
+                                    "visits": 1,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "state": 14,
+                    "action_from_parent": 2,
+                    "visits": 905,
+                    "total_value": 878.0,
+                    "win_rate": 0.9702,
+                    "children": [
+                        {
+                            "state": 10,
+                            "action_from_parent": 3,
+                            "visits": 17,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": [
+                                {
+                                    "state": 6,
+                                    "action_from_parent": 3,
+                                    "visits": 4,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 6,
+                                    "action_from_parent": 2,
+                                    "visits": 4,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 9,
+                                    "action_from_parent": 1,
+                                    "visits": 4,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 6,
+                                    "action_from_parent": 0,
+                                    "visits": 4,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "state": 15,
+                            "action_from_parent": 2,
+                            "visits": 320,
+                            "total_value": 320.0,
+                            "win_rate": 1.0,
+                            "children": []
+                        },
+                        {
+                            "state": 15,
+                            "action_from_parent": 1,
+                            "visits": 320,
+                            "total_value": 320.0,
+                            "win_rate": 1.0,
+                            "children": []
+                        },
+                        {
+                            "state": 14,
+                            "action_from_parent": 0,
+                            "visits": 247,
+                            "total_value": 237.0,
+                            "win_rate": 0.9595,
+                            "children": [
+                                {
+                                    "state": 15,
+                                    "action_from_parent": 3,
+                                    "visits": 78,
+                                    "total_value": 78.0,
+                                    "win_rate": 1.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 15,
+                                    "action_from_parent": 2,
+                                    "visits": 78,
+                                    "total_value": 78.0,
+                                    "win_rate": 1.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 15,
+                                    "action_from_parent": 1,
+                                    "visits": 77,
+                                    "total_value": 77.0,
+                                    "win_rate": 1.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 13,
+                                    "action_from_parent": 0,
+                                    "visits": 13,
+                                    "total_value": 3.0,
+                                    "win_rate": 0.2308,
+                                    "children": [
+                                        null,
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "state": 13,
+                    "action_from_parent": 1,
+                    "visits": 26,
+                    "total_value": 3.0,
+                    "win_rate": 0.1154,
+                    "children": [
+                        {
+                            "state": 9,
+                            "action_from_parent": 3,
+                            "visits": 6,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": [
+                                {
+                                    "state": 5,
+                                    "action_from_parent": 3,
+                                    "visits": 2,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 13,
+                                    "action_from_parent": 2,
+                                    "visits": 1,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 13,
+                                    "action_from_parent": 1,
+                                    "visits": 1,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 8,
+                                    "action_from_parent": 0,
+                                    "visits": 1,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "state": 13,
+                            "action_from_parent": 2,
+                            "visits": 8,
+                            "total_value": 2.0,
+                            "win_rate": 0.25,
+                            "children": [
+                                {
+                                    "state": 12,
+                                    "action_from_parent": 3,
+                                    "visits": 2,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 14,
+                                    "action_from_parent": 2,
+                                    "visits": 2,
+                                    "total_value": 1.0,
+                                    "win_rate": 0.5,
+                                    "children": [
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 12,
+                                    "action_from_parent": 1,
+                                    "visits": 2,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 9,
+                                    "action_from_parent": 0,
+                                    "visits": 1,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "state": 12,
+                            "action_from_parent": 1,
+                            "visits": 6,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": []
+                        },
+                        {
+                            "state": 12,
+                            "action_from_parent": 0,
+                            "visits": 5,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "state": 10,
+                    "action_from_parent": 0,
+                    "visits": 28,
+                    "total_value": 4.0,
+                    "win_rate": 0.1429,
+                    "children": [
+                        {
+                            "state": 9,
+                            "action_from_parent": 3,
+                            "visits": 7,
+                            "total_value": 1.0,
+                            "win_rate": 0.1429,
+                            "children": [
+                                {
+                                    "state": 8,
+                                    "action_from_parent": 3,
+                                    "visits": 2,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 10,
+                                    "action_from_parent": 2,
+                                    "visits": 2,
+                                    "total_value": 1.0,
+                                    "win_rate": 0.5,
+                                    "children": [
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 8,
+                                    "action_from_parent": 1,
+                                    "visits": 1,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 13,
+                                    "action_from_parent": 0,
+                                    "visits": 1,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "state": 11,
+                            "action_from_parent": 2,
+                            "visits": 6,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": []
+                        },
+                        {
+                            "state": 14,
+                            "action_from_parent": 1,
+                            "visits": 9,
+                            "total_value": 3.0,
+                            "win_rate": 0.3333,
+                            "children": [
+                                {
+                                    "state": 10,
+                                    "action_from_parent": 3,
+                                    "visits": 2,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": [
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 14,
+                                    "action_from_parent": 2,
+                                    "visits": 3,
+                                    "total_value": 2.0,
+                                    "win_rate": 0.6667,
+                                    "children": [
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 14,
+                                    "action_from_parent": 1,
+                                    "visits": 2,
+                                    "total_value": 1.0,
+                                    "win_rate": 0.5,
+                                    "children": [
+                                        null
+                                    ]
+                                },
+                                {
+                                    "state": 13,
+                                    "action_from_parent": 0,
+                                    "visits": 1,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "state": 6,
+                            "action_from_parent": 0,
+                            "visits": 5,
+                            "total_value": 0.0,
+                            "win_rate": 0.0,
+                            "children": [
+                                {
+                                    "state": 2,
+                                    "action_from_parent": 3,
+                                    "visits": 1,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 7,
+                                    "action_from_parent": 2,
+                                    "visits": 1,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 5,
+                                    "action_from_parent": 1,
+                                    "visits": 1,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                },
+                                {
+                                    "state": 5,
+                                    "action_from_parent": 0,
+                                    "visits": 1,
+                                    "total_value": 0.0,
+                                    "win_rate": 0.0,
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]
