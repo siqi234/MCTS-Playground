@@ -73,7 +73,7 @@ def visualize_mcts_tree(root, filename="mcts_step"):
 
 # --- MCTS Implementation ---
 # Standard UCB1 exploration constant
-EXPLORATION_CONSTANT = 1.41
+EXPLORATION_CONSTANT = math.sqrt(2)
 
 class MCTSNode:
     def __init__(self, state, parent=None, action=None):
