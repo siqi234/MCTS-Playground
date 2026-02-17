@@ -2,9 +2,78 @@ import gymnasium as gym
 import math
 import random
 import copy
+from graphviz import Digraph
+import json
 
+# --- Utilities for visualization ---
+def serialize_tree(node, max_depth=3):
+    """
+    Converts the MCTS tree into a dictionary.
+    max_depth: Limits how deep we record to save space/time.
+    """
+    if node is None or max_depth < 0:
+        return None
+
+    # Calculate value for this node (e.g., win rate)
+    win_rate = node.value / node.visits if node.visits > 0 else 0
+
+    return {
+        "state": int(node.state),       # The FrozenLake grid position (0-15)
+        "action_from_parent": node.action, # The move taken to get here
+        "visits": node.visits,
+        "total_value": node.value,
+        "win_rate": round(win_rate, 4),
+        # Recursively serialize children
+        "children": [
+            serialize_tree(child, max_depth - 1) 
+            for child in node.children
+        ]
+    }
+
+def visualize_mcts_tree(root, filename="mcts_step"):
+    dot = Digraph(comment='MCTS Search Tree')
+    
+    # We use a queue for Breadth-First Search to add nodes to the graph
+    queue = [(root, "Root")]
+    
+    # To keep the graph readable, we might only plot nodes with > N visits
+    min_visits_to_plot = 10 
+    
+    # Create the root node in the graph
+    dot.node("Root", label=f"State: {root.state}\nVisits: {root.visits}", shape="box")
+
+    idx = 0
+    while queue:
+        current_node, parent_id = queue.pop(0)
+        
+        for child in current_node.children:
+            if child.visits >= min_visits_to_plot:
+                idx += 1
+                child_id = f"node_{idx}"
+                
+                # Label: Action taken + Win Rate
+                action_map = {0: "Left", 1: "Down", 2: "Right", 3: "Up"}
+                move = action_map.get(child.action, "?")
+                win_rate = child.value / child.visits
+                
+                label = f"Move: {move}\nState: {child.state}\nWR: {win_rate:.2f}\nN: {child.visits}"
+                
+                # Color code: Green for high win rate, Red for low
+                # Find the best sibling's win rate (e.g., 0.019)
+                if win_rate > 0.5: color = "green"
+                else: color = "red" # 1.9% will never be green
+                
+                dot.node(child_id, label=label, color=color)
+                dot.edge(parent_id, child_id)
+                
+                queue.append((child, child_id))
+    
+    dot.render(filename, format='png', cleanup=True)
+    print(f"Tree saved to {filename}.png")
+
+# --- MCTS Implementation ---
 # Standard UCB1 exploration constant
-EXPLORATION_CONSTANT = 1.41
+EXPLORATION_CONSTANT = math.sqrt(2)
 
 class MCTSNode:
     def __init__(self, state, parent=None, action=None):
@@ -41,7 +110,7 @@ class MCTS:
             self._backpropagate(node, reward)
 
         # Return the action of the most visited child
-        return self._get_best_action(root)
+        return self._get_best_action(root), root
 
     def _select(self, node):
         while not self._is_terminal(node.state):
@@ -77,11 +146,17 @@ class MCTS:
             node = node.parent
 
     def _get_next_state(self, state, action):
-        # We use the environment's transition matrix P to simulate the move.
-        # Since we use is_slippery=False, the list has only 1 item (prob=1.0).
-        transitions = self.P[state][action]
-        # transitions is a list of tuples: (probability, new_state, reward, terminated)
-        return transitions[0][1]
+            # Fetch transitions from the environment's model
+            # transitions = [(probability, next_state, reward, terminated), ...]
+            transitions = self.P[state][action]
+            
+            # Extract probabilities and corresponding states
+            probs = [t[0] for t in transitions]
+            states = [t[1] for t in transitions]
+            
+            # Randomly select the next state based on the probabilities
+            # This simulates the "Slippery" nature of the ice
+            return random.choices(states, weights=probs)[0]
 
     def _is_terminal(self, state):
         # In 4x4 FrozenLake: Holes (H) and Goal (G) are terminal
@@ -109,28 +184,51 @@ class MCTS:
         return sorted_children[0].action
 
 # --- Main Game Loop ---
+if __name__ == "__main__":
+    # Setup environment
+    env = gym.make('FrozenLake-v1', is_slippery=False, render_mode="human") # is_slippery=False for deterministic problems
+    observation, info = env.reset()
 
-# Setup environment (Deterministic for basic MCTS)
-env = gym.make('FrozenLake-v1', is_slippery=False, render_mode="human")
-observation, info = env.reset()
+    mcts = MCTS(env)
+    # Storage for the game history
+    history = []
 
-mcts = MCTS(env)
+    observation, info = env.reset()
+    done = False
+    step_count = 0
 
-print("Start MCTS Agent on Frozen Lake...")
+    print("Start MCTS Agent on *Non-Slippery* Frozen Lake...")
 
-done = False
-while not done:
-    # Run MCTS to find the best action for the current state
-    action = mcts.search(initial_state=observation, iterations=1000)
-    
-    # Take the action in the real environment
-    observation, reward, terminated, truncated, info = env.step(action)
-    done = terminated or truncated
+    while not done:
+        # SEARCH: Run MCTS to find the best action
+        # Note: We return only the action here (standard usage)
+        # If you are using the 'recorder' version, change this to: action, root = ...
+        best_action, tree_root = mcts.search(initial_state=observation, iterations=1000)
 
-    if done:
-        if reward == 1:
-            print("Goal Reached!")
-        else:
-            print("Fell in a hole.")
+        # Record the step's data for visualization
+        step_data = {
+            "step": step_count,
+            "current_state": int(observation),
+            "chosen_action": int(best_action),
+            "tree_snapshot": serialize_tree(tree_root, max_depth=3) 
+        }
+        history.append(step_data)
+        visualize_mcts_tree(tree_root, filename=f"frozen-lake/non_slippry_tree/mcts_step_{step_count}")
 
-env.close()
+        # ACT: Take the action in the real environment
+        observation, reward, terminated, truncated, info = env.step(best_action)
+        done = terminated or truncated
+
+        step_count += 1
+
+        if done:
+            if reward == 1:
+                print("Goal Reached!")
+            else:
+                print("Fell in a hole.")
+
+    # Save the history to a JSON file
+    with open("frozen-lake/non_slippry_tree/non_slippery_run_history.json", "w") as f:
+        json.dump(history, f, indent=4)
+
+    env.close()
