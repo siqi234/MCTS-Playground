@@ -389,7 +389,7 @@ def visualize_tree_with_chance(root: DecisionNode, filename: str, min_visits_to_
 
         else:
             cn: ChanceNode = obj
-            # show all outcomes (or a subset if you want)
+            # show all outcomes
             for oe in cn.outcomes:
                 child = cn.children.get(oe.next_state)
                 if child is None:
