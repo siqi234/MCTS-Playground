@@ -1,0 +1,4826 @@
+[
+  {
+    "step": 0,
+    "current_state": 0,
+    "chosen_action": 2,
+    "chosen_action_name": "Right",
+    "tree_snapshot": {
+      "type": "Decision",
+      "state": 0,
+      "visits": 1500,
+      "total_value": 18.85090910256144,
+      "win_rate": 0.0126,
+      "actions": [
+        {
+          "action": 0,
+          "action_name": "Left",
+          "N_sa": 381,
+          "Q_sa": 0.01419978932912059,
+          "chance": {
+            "type": "Chance",
+            "state_action": "(0,0)",
+            "visits": 381,
+            "total_value": 5.410119734394944,
+            "win_rate": 0.0142,
+            "outcomes": [
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 0,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 268,
+                "child": {
+                  "type": "Decision",
+                  "state": 0,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.3333333333333333,
+                "next_state": 0,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 268,
+                "child": {
+                  "type": "Decision",
+                  "state": 0,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 4,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 113,
+                "child": {
+                  "type": "Decision",
+                  "state": 4,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "action": 1,
+          "action_name": "Down",
+          "N_sa": 365,
+          "Q_sa": 0.009916318334072603,
+          "chance": {
+            "type": "Chance",
+            "state_action": "(0,1)",
+            "visits": 365,
+            "total_value": 3.6194561919364983,
+            "win_rate": 0.0099,
+            "outcomes": [
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 0,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 110,
+                "child": {
+                  "type": "Decision",
+                  "state": 0,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.3333333333333333,
+                "next_state": 4,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 137,
+                "child": {
+                  "type": "Decision",
+                  "state": 4,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 1,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 118,
+                "child": {
+                  "type": "Decision",
+                  "state": 1,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "action": 2,
+          "action_name": "Right",
+          "N_sa": 389,
+          "Q_sa": 0.015964171447371545,
+          "chance": {
+            "type": "Chance",
+            "state_action": "(0,2)",
+            "visits": 389,
+            "total_value": 6.210062693027528,
+            "win_rate": 0.016,
+            "outcomes": [
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 4,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 133,
+                "child": {
+                  "type": "Decision",
+                  "state": 4,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.3333333333333333,
+                "next_state": 1,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 130,
+                "child": {
+                  "type": "Decision",
+                  "state": 1,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 0,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 126,
+                "child": {
+                  "type": "Decision",
+                  "state": 0,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "action": 3,
+          "action_name": "Up",
+          "N_sa": 365,
+          "Q_sa": 0.00989389173480131,
+          "chance": {
+            "type": "Chance",
+            "state_action": "(0,3)",
+            "visits": 365,
+            "total_value": 3.6112704832024773,
+            "win_rate": 0.0099,
+            "outcomes": [
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 1,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 127,
+                "child": {
+                  "type": "Decision",
+                  "state": 1,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.3333333333333333,
+                "next_state": 0,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 238,
+                "child": {
+                  "type": "Decision",
+                  "state": 0,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 0,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 238,
+                "child": {
+                  "type": "Decision",
+                  "state": 0,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "step": 1,
+    "current_state": 0,
+    "chosen_action": 1,
+    "chosen_action_name": "Down",
+    "tree_snapshot": {
+      "type": "Decision",
+      "state": 0,
+      "visits": 1500,
+      "total_value": 19.4478723723006,
+      "win_rate": 0.013,
+      "actions": [
+        {
+          "action": 0,
+          "action_name": "Left",
+          "N_sa": 356,
+          "Q_sa": 0.007828566118698987,
+          "chance": {
+            "type": "Chance",
+            "state_action": "(0,0)",
+            "visits": 356,
+            "total_value": 2.78696953825684,
+            "win_rate": 0.0078,
+            "outcomes": [
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 0,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 223,
+                "child": {
+                  "type": "Decision",
+                  "state": 0,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.3333333333333333,
+                "next_state": 0,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 223,
+                "child": {
+                  "type": "Decision",
+                  "state": 0,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 4,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 133,
+                "child": {
+                  "type": "Decision",
+                  "state": 4,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "action": 1,
+          "action_name": "Down",
+          "N_sa": 403,
+          "Q_sa": 0.01968370544854329,
+          "chance": {
+            "type": "Chance",
+            "state_action": "(0,1)",
+            "visits": 403,
+            "total_value": 7.932533295762939,
+            "win_rate": 0.0197,
+            "outcomes": [
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 0,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 127,
+                "child": {
+                  "type": "Decision",
+                  "state": 0,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.3333333333333333,
+                "next_state": 4,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 145,
+                "child": {
+                  "type": "Decision",
+                  "state": 4,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 1,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 131,
+                "child": {
+                  "type": "Decision",
+                  "state": 1,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "action": 2,
+          "action_name": "Right",
+          "N_sa": 387,
+          "Q_sa": 0.015907230697149475,
+          "chance": {
+            "type": "Chance",
+            "state_action": "(0,2)",
+            "visits": 387,
+            "total_value": 6.156098279796841,
+            "win_rate": 0.0159,
+            "outcomes": [
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 4,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 134,
+                "child": {
+                  "type": "Decision",
+                  "state": 4,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.3333333333333333,
+                "next_state": 1,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 122,
+                "child": {
+                  "type": "Decision",
+                  "state": 1,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 0,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 131,
+                "child": {
+                  "type": "Decision",
+                  "state": 0,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "action": 3,
+          "action_name": "Up",
+          "N_sa": 354,
+          "Q_sa": 0.00726630299006775,
+          "chance": {
+            "type": "Chance",
+            "state_action": "(0,3)",
+            "visits": 354,
+            "total_value": 2.5722712584839824,
+            "win_rate": 0.0073,
+            "outcomes": [
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 1,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 119,
+                "child": {
+                  "type": "Decision",
+                  "state": 1,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.3333333333333333,
+                "next_state": 0,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 235,
+                "child": {
+                  "type": "Decision",
+                  "state": 0,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 0,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 235,
+                "child": {
+                  "type": "Decision",
+                  "state": 0,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "step": 2,
+    "current_state": 4,
+    "chosen_action": 1,
+    "chosen_action_name": "Down",
+    "tree_snapshot": {
+      "type": "Decision",
+      "state": 4,
+      "visits": 1500,
+      "total_value": 30.00996197478807,
+      "win_rate": 0.02,
+      "actions": [
+        {
+          "action": 0,
+          "action_name": "Left",
+          "N_sa": 412,
+          "Q_sa": 0.028798021154223218,
+          "chance": {
+            "type": "Chance",
+            "state_action": "(4,0)",
+            "visits": 412,
+            "total_value": 11.864784715539962,
+            "win_rate": 0.0288,
+            "outcomes": [
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 0,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 132,
+                "child": {
+                  "type": "Decision",
+                  "state": 0,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.3333333333333333,
+                "next_state": 4,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 150,
+                "child": {
+                  "type": "Decision",
+                  "state": 4,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 8,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 130,
+                "child": {
+                  "type": "Decision",
+                  "state": 8,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "action": 1,
+          "action_name": "Down",
+          "N_sa": 420,
+          "Q_sa": 0.03033851457632947,
+          "chance": {
+            "type": "Chance",
+            "state_action": "(4,1)",
+            "visits": 420,
+            "total_value": 12.742176122058371,
+            "win_rate": 0.0303,
+            "outcomes": [
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 4,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 129,
+                "child": {
+                  "type": "Decision",
+                  "state": 4,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.3333333333333333,
+                "next_state": 8,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 158,
+                "child": {
+                  "type": "Decision",
+                  "state": 8,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 5,
+                "reward": 0.0,
+                "done": true,
+                "sampled_visits": 133,
+                "child": {
+                  "type": "Decision",
+                  "state": 5,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "action": 2,
+          "action_name": "Right",
+          "N_sa": 342,
+          "Q_sa": 0.010561294931892212,
+          "chance": {
+            "type": "Chance",
+            "state_action": "(4,2)",
+            "visits": 342,
+            "total_value": 3.6119628667071364,
+            "win_rate": 0.0106,
+            "outcomes": [
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 8,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 106,
+                "child": {
+                  "type": "Decision",
+                  "state": 8,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.3333333333333333,
+                "next_state": 5,
+                "reward": 0.0,
+                "done": true,
+                "sampled_visits": 112,
+                "child": {
+                  "type": "Decision",
+                  "state": 5,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 0,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 124,
+                "child": {
+                  "type": "Decision",
+                  "state": 0,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "action": 3,
+          "action_name": "Up",
+          "N_sa": 326,
+          "Q_sa": 0.005493982424793276,
+          "chance": {
+            "type": "Chance",
+            "state_action": "(4,3)",
+            "visits": 326,
+            "total_value": 1.7910382704826087,
+            "win_rate": 0.0055,
+            "outcomes": [
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 5,
+                "reward": 0.0,
+                "done": true,
+                "sampled_visits": 119,
+                "child": {
+                  "type": "Decision",
+                  "state": 5,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.3333333333333333,
+                "next_state": 0,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 113,
+                "child": {
+                  "type": "Decision",
+                  "state": 0,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 4,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 94,
+                "child": {
+                  "type": "Decision",
+                  "state": 4,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "step": 3,
+    "current_state": 8,
+    "chosen_action": 3,
+    "chosen_action_name": "Up",
+    "tree_snapshot": {
+      "type": "Decision",
+      "state": 8,
+      "visits": 1500,
+      "total_value": 60.66733260939481,
+      "win_rate": 0.0404,
+      "actions": [
+        {
+          "action": 0,
+          "action_name": "Left",
+          "N_sa": 303,
+          "Q_sa": 0.01765578468319758,
+          "chance": {
+            "type": "Chance",
+            "state_action": "(8,0)",
+            "visits": 303,
+            "total_value": 5.349702759008864,
+            "win_rate": 0.0177,
+            "outcomes": [
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 4,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 103,
+                "child": {
+                  "type": "Decision",
+                  "state": 4,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.3333333333333333,
+                "next_state": 8,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 108,
+                "child": {
+                  "type": "Decision",
+                  "state": 8,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 12,
+                "reward": 0.0,
+                "done": true,
+                "sampled_visits": 92,
+                "child": {
+                  "type": "Decision",
+                  "state": 12,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "action": 1,
+          "action_name": "Down",
+          "N_sa": 397,
+          "Q_sa": 0.04519347128333536,
+          "chance": {
+            "type": "Chance",
+            "state_action": "(8,1)",
+            "visits": 397,
+            "total_value": 17.941808099484145,
+            "win_rate": 0.0452,
+            "outcomes": [
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 8,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 126,
+                "child": {
+                  "type": "Decision",
+                  "state": 8,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.3333333333333333,
+                "next_state": 12,
+                "reward": 0.0,
+                "done": true,
+                "sampled_visits": 128,
+                "child": {
+                  "type": "Decision",
+                  "state": 12,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 9,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 143,
+                "child": {
+                  "type": "Decision",
+                  "state": 9,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "action": 2,
+          "action_name": "Right",
+          "N_sa": 333,
+          "Q_sa": 0.02805942953398056,
+          "chance": {
+            "type": "Chance",
+            "state_action": "(8,2)",
+            "visits": 333,
+            "total_value": 9.343790034815523,
+            "win_rate": 0.0281,
+            "outcomes": [
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 12,
+                "reward": 0.0,
+                "done": true,
+                "sampled_visits": 120,
+                "child": {
+                  "type": "Decision",
+                  "state": 12,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.3333333333333333,
+                "next_state": 9,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 106,
+                "child": {
+                  "type": "Decision",
+                  "state": 9,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 4,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 107,
+                "child": {
+                  "type": "Decision",
+                  "state": 4,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "action": 3,
+          "action_name": "Up",
+          "N_sa": 467,
+          "Q_sa": 0.06002576384600915,
+          "chance": {
+            "type": "Chance",
+            "state_action": "(8,3)",
+            "visits": 467,
+            "total_value": 28.032031716086266,
+            "win_rate": 0.06,
+            "outcomes": [
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 9,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 176,
+                "child": {
+                  "type": "Decision",
+                  "state": 9,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.3333333333333333,
+                "next_state": 4,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 130,
+                "child": {
+                  "type": "Decision",
+                  "state": 4,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 8,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 161,
+                "child": {
+                  "type": "Decision",
+                  "state": 8,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "step": 4,
+    "current_state": 9,
+    "chosen_action": 2,
+    "chosen_action_name": "Right",
+    "tree_snapshot": {
+      "type": "Decision",
+      "state": 9,
+      "visits": 1500,
+      "total_value": 114.94487008054266,
+      "win_rate": 0.0766,
+      "actions": [
+        {
+          "action": 0,
+          "action_name": "Left",
+          "N_sa": 309,
+          "Q_sa": 0.055147252162268554,
+          "chance": {
+            "type": "Chance",
+            "state_action": "(9,0)",
+            "visits": 309,
+            "total_value": 17.040500918140978,
+            "win_rate": 0.0551,
+            "outcomes": [
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 5,
+                "reward": 0.0,
+                "done": true,
+                "sampled_visits": 116,
+                "child": {
+                  "type": "Decision",
+                  "state": 5,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.3333333333333333,
+                "next_state": 8,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 97,
+                "child": {
+                  "type": "Decision",
+                  "state": 8,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 13,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 96,
+                "child": {
+                  "type": "Decision",
+                  "state": 13,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "action": 1,
+          "action_name": "Down",
+          "N_sa": 448,
+          "Q_sa": 0.09180244851392536,
+          "chance": {
+            "type": "Chance",
+            "state_action": "(9,1)",
+            "visits": 448,
+            "total_value": 41.127496934238565,
+            "win_rate": 0.0918,
+            "outcomes": [
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 8,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 149,
+                "child": {
+                  "type": "Decision",
+                  "state": 8,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.3333333333333333,
+                "next_state": 13,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 159,
+                "child": {
+                  "type": "Decision",
+                  "state": 13,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 10,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 140,
+                "child": {
+                  "type": "Decision",
+                  "state": 10,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "action": 2,
+          "action_name": "Right",
+          "N_sa": 482,
+          "Q_sa": 0.09803818056207372,
+          "chance": {
+            "type": "Chance",
+            "state_action": "(9,2)",
+            "visits": 482,
+            "total_value": 47.25440303091952,
+            "win_rate": 0.098,
+            "outcomes": [
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 13,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 132,
+                "child": {
+                  "type": "Decision",
+                  "state": 13,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.3333333333333333,
+                "next_state": 10,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 185,
+                "child": {
+                  "type": "Decision",
+                  "state": 10,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 5,
+                "reward": 0.0,
+                "done": true,
+                "sampled_visits": 165,
+                "child": {
+                  "type": "Decision",
+                  "state": 5,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "action": 3,
+          "action_name": "Up",
+          "N_sa": 261,
+          "Q_sa": 0.03648455631127857,
+          "chance": {
+            "type": "Chance",
+            "state_action": "(9,3)",
+            "visits": 261,
+            "total_value": 9.522469197243714,
+            "win_rate": 0.0365,
+            "outcomes": [
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 10,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 89,
+                "child": {
+                  "type": "Decision",
+                  "state": 10,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.3333333333333333,
+                "next_state": 5,
+                "reward": 0.0,
+                "done": true,
+                "sampled_visits": 88,
+                "child": {
+                  "type": "Decision",
+                  "state": 5,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 8,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 84,
+                "child": {
+                  "type": "Decision",
+                  "state": 8,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "step": 5,
+    "current_state": 13,
+    "chosen_action": 1,
+    "chosen_action_name": "Down",
+    "tree_snapshot": {
+      "type": "Decision",
+      "state": 13,
+      "visits": 1500,
+      "total_value": 327.94784098069294,
+      "win_rate": 0.2186,
+      "actions": [
+        {
+          "action": 0,
+          "action_name": "Left",
+          "N_sa": 144,
+          "Q_sa": 0.09327921076193436,
+          "chance": {
+            "type": "Chance",
+            "state_action": "(13,0)",
+            "visits": 144,
+            "total_value": 13.432206349718552,
+            "win_rate": 0.0933,
+            "outcomes": [
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 9,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 50,
+                "child": {
+                  "type": "Decision",
+                  "state": 9,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.3333333333333333,
+                "next_state": 12,
+                "reward": 0.0,
+                "done": true,
+                "sampled_visits": 53,
+                "child": {
+                  "type": "Decision",
+                  "state": 12,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 13,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 41,
+                "child": {
+                  "type": "Decision",
+                  "state": 13,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "action": 1,
+          "action_name": "Down",
+          "N_sa": 522,
+          "Q_sa": 0.24360708252230678,
+          "chance": {
+            "type": "Chance",
+            "state_action": "(13,1)",
+            "visits": 522,
+            "total_value": 127.16289707664393,
+            "win_rate": 0.2436,
+            "outcomes": [
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 12,
+                "reward": 0.0,
+                "done": true,
+                "sampled_visits": 163,
+                "child": {
+                  "type": "Decision",
+                  "state": 12,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.3333333333333333,
+                "next_state": 13,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 197,
+                "child": {
+                  "type": "Decision",
+                  "state": 13,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 14,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 162,
+                "child": {
+                  "type": "Decision",
+                  "state": 14,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "action": 2,
+          "action_name": "Right",
+          "N_sa": 467,
+          "Q_sa": 0.23468480639764625,
+          "chance": {
+            "type": "Chance",
+            "state_action": "(13,2)",
+            "visits": 467,
+            "total_value": 109.59780458770075,
+            "win_rate": 0.2347,
+            "outcomes": [
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 13,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 159,
+                "child": {
+                  "type": "Decision",
+                  "state": 13,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.3333333333333333,
+                "next_state": 14,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 157,
+                "child": {
+                  "type": "Decision",
+                  "state": 14,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 9,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 151,
+                "child": {
+                  "type": "Decision",
+                  "state": 9,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "action": 3,
+          "action_name": "Up",
+          "N_sa": 367,
+          "Q_sa": 0.21186630236138582,
+          "chance": {
+            "type": "Chance",
+            "state_action": "(13,3)",
+            "visits": 367,
+            "total_value": 77.75493296662864,
+            "win_rate": 0.2119,
+            "outcomes": [
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 14,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 127,
+                "child": {
+                  "type": "Decision",
+                  "state": 14,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.3333333333333333,
+                "next_state": 9,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 116,
+                "child": {
+                  "type": "Decision",
+                  "state": 9,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 12,
+                "reward": 0.0,
+                "done": true,
+                "sampled_visits": 124,
+                "child": {
+                  "type": "Decision",
+                  "state": 12,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "step": 6,
+    "current_state": 13,
+    "chosen_action": 2,
+    "chosen_action_name": "Right",
+    "tree_snapshot": {
+      "type": "Decision",
+      "state": 13,
+      "visits": 1500,
+      "total_value": 265.989593719292,
+      "win_rate": 0.1773,
+      "actions": [
+        {
+          "action": 0,
+          "action_name": "Left",
+          "N_sa": 154,
+          "Q_sa": 0.06251729308382342,
+          "chance": {
+            "type": "Chance",
+            "state_action": "(13,0)",
+            "visits": 154,
+            "total_value": 9.627663134908804,
+            "win_rate": 0.0625,
+            "outcomes": [
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 9,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 50,
+                "child": {
+                  "type": "Decision",
+                  "state": 9,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.3333333333333333,
+                "next_state": 12,
+                "reward": 0.0,
+                "done": true,
+                "sampled_visits": 55,
+                "child": {
+                  "type": "Decision",
+                  "state": 12,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 13,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 49,
+                "child": {
+                  "type": "Decision",
+                  "state": 13,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "action": 1,
+          "action_name": "Down",
+          "N_sa": 337,
+          "Q_sa": 0.16115050621365257,
+          "chance": {
+            "type": "Chance",
+            "state_action": "(13,1)",
+            "visits": 337,
+            "total_value": 54.3077205940009,
+            "win_rate": 0.1612,
+            "outcomes": [
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 12,
+                "reward": 0.0,
+                "done": true,
+                "sampled_visits": 110,
+                "child": {
+                  "type": "Decision",
+                  "state": 12,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.3333333333333333,
+                "next_state": 13,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 118,
+                "child": {
+                  "type": "Decision",
+                  "state": 13,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 14,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 109,
+                "child": {
+                  "type": "Decision",
+                  "state": 14,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "action": 2,
+          "action_name": "Right",
+          "N_sa": 589,
+          "Q_sa": 0.21278767343674548,
+          "chance": {
+            "type": "Chance",
+            "state_action": "(13,2)",
+            "visits": 589,
+            "total_value": 125.3319396542429,
+            "win_rate": 0.2128,
+            "outcomes": [
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 13,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 211,
+                "child": {
+                  "type": "Decision",
+                  "state": 13,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.3333333333333333,
+                "next_state": 14,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 191,
+                "child": {
+                  "type": "Decision",
+                  "state": 14,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 9,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 187,
+                "child": {
+                  "type": "Decision",
+                  "state": 9,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "action": 3,
+          "action_name": "Up",
+          "N_sa": 420,
+          "Q_sa": 0.18267207222890167,
+          "chance": {
+            "type": "Chance",
+            "state_action": "(13,3)",
+            "visits": 420,
+            "total_value": 76.72227033613866,
+            "win_rate": 0.1827,
+            "outcomes": [
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 14,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 132,
+                "child": {
+                  "type": "Decision",
+                  "state": 14,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.3333333333333333,
+                "next_state": 9,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 147,
+                "child": {
+                  "type": "Decision",
+                  "state": 9,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 12,
+                "reward": 0.0,
+                "done": true,
+                "sampled_visits": 141,
+                "child": {
+                  "type": "Decision",
+                  "state": 12,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "step": 7,
+    "current_state": 14,
+    "chosen_action": 1,
+    "chosen_action_name": "Down",
+    "tree_snapshot": {
+      "type": "Decision",
+      "state": 14,
+      "visits": 1500,
+      "total_value": 728.4502905134922,
+      "win_rate": 0.4856,
+      "actions": [
+        {
+          "action": 0,
+          "action_name": "Left",
+          "N_sa": 80,
+          "Q_sa": 0.24334885957142469,
+          "chance": {
+            "type": "Chance",
+            "state_action": "(14,0)",
+            "visits": 80,
+            "total_value": 19.467908765713982,
+            "win_rate": 0.2433,
+            "outcomes": [
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 10,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 23,
+                "child": {
+                  "type": "Decision",
+                  "state": 10,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.3333333333333333,
+                "next_state": 13,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 28,
+                "child": {
+                  "type": "Decision",
+                  "state": 13,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 14,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 29,
+                "child": {
+                  "type": "Decision",
+                  "state": 14,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "action": 1,
+          "action_name": "Down",
+          "N_sa": 677,
+          "Q_sa": 0.5265514967689872,
+          "chance": {
+            "type": "Chance",
+            "state_action": "(14,1)",
+            "visits": 677,
+            "total_value": 356.4753633126053,
+            "win_rate": 0.5266,
+            "outcomes": [
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 13,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 228,
+                "child": {
+                  "type": "Decision",
+                  "state": 13,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.3333333333333333,
+                "next_state": 14,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 225,
+                "child": {
+                  "type": "Decision",
+                  "state": 14,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 15,
+                "reward": 1.0,
+                "done": true,
+                "sampled_visits": 224,
+                "child": {
+                  "type": "Decision",
+                  "state": 15,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "action": 2,
+          "action_name": "Right",
+          "N_sa": 456,
+          "Q_sa": 0.4924464099555933,
+          "chance": {
+            "type": "Chance",
+            "state_action": "(14,2)",
+            "visits": 456,
+            "total_value": 224.55556293975079,
+            "win_rate": 0.4924,
+            "outcomes": [
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 14,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 168,
+                "child": {
+                  "type": "Decision",
+                  "state": 14,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.3333333333333333,
+                "next_state": 15,
+                "reward": 1.0,
+                "done": true,
+                "sampled_visits": 138,
+                "child": {
+                  "type": "Decision",
+                  "state": 15,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 10,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 150,
+                "child": {
+                  "type": "Decision",
+                  "state": 10,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "action": 3,
+          "action_name": "Up",
+          "N_sa": 287,
+          "Q_sa": 0.445823886743632,
+          "chance": {
+            "type": "Chance",
+            "state_action": "(14,3)",
+            "visits": 287,
+            "total_value": 127.95145549542231,
+            "win_rate": 0.4458,
+            "outcomes": [
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 15,
+                "reward": 1.0,
+                "done": true,
+                "sampled_visits": 101,
+                "child": {
+                  "type": "Decision",
+                  "state": 15,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.3333333333333333,
+                "next_state": 10,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 95,
+                "child": {
+                  "type": "Decision",
+                  "state": 10,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              },
+              {
+                "prob": 0.33333333333333337,
+                "next_state": 13,
+                "reward": 0.0,
+                "done": false,
+                "sampled_visits": 91,
+                "child": {
+                  "type": "Decision",
+                  "state": 13,
+                  "visits": 0,
+                  "total_value": 0.0,
+                  "win_rate": 0.0,
+                  "actions": [
+                    {
+                      "action": 0,
+                      "action_name": "Left",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 1,
+                      "action_name": "Down",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 2,
+                      "action_name": "Right",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    },
+                    {
+                      "action": 3,
+                      "action_name": "Up",
+                      "N_sa": 0,
+                      "Q_sa": 0.0,
+                      "chance": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+]

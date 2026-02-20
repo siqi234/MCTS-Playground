@@ -260,7 +260,7 @@ if __name__ == "__main__":
 
     while not done and step_count < 200:
         # SEARCH: Run MCTS on current state
-        best_action, tree_root = mcts.search(initial_state=observation, iterations=1000)
+        best_action, tree_root = mcts.search(initial_state=observation, iterations=5000)
 
         # Record this step
         step_data = {
