@@ -13,7 +13,6 @@ ACTION_MAP = {0: "Left", 1: "Down", 2: "Right", 3: "Up"}
 
 # ----------------------------
 # True chance-node tree classes
-# ----------------------------
 
 @dataclass
 class OutcomeEdge:
@@ -87,7 +86,6 @@ class DecisionNode:
 
 # ----------------------------
 # MCTS with explicit chance nodes
-# ----------------------------
 
 class TrueChanceMCTS:
     def __init__(
@@ -187,7 +185,7 @@ class TrueChanceMCTS:
 
         return G
 
-    def simulate(self, root: DecisionNode, tree_depth_limit: int = 50) -> Dict[str, Any]:
+    def simulate(self, root: DecisionNode, tree_depth_limit: int = 500) -> Dict[str, Any]:
         """
         One MCTS simulation that alternates:
           DecisionNode --(choose action)--> ChanceNode --(sample outcome)--> DecisionNode
@@ -219,7 +217,7 @@ class TrueChanceMCTS:
 
             cn = self.ensure_chance_node(dn, a)
 
-            # Sample chance outcome (this is the TRUE chance node)
+            # Sample chance outcome
             oe = cn.sample_outcome()
             cn.visits += 1
             cn.outcome_visits[oe.next_state] = cn.outcome_visits.get(oe.next_state, 0) + 1
@@ -230,7 +228,7 @@ class TrueChanceMCTS:
             # Move to next decision node
             dn = cn.get_child(oe.next_state)
 
-            # Expansion stop rule: first time we see this new decision state node, stop and rollout
+            # Expansion stop rule
             if dn.visits == 0:
                 # leaf_return includes immediate reward + rollout from next state
                 leaf_return = oe.reward + self.gamma * (0.0 if oe.done else self.rollout(dn.state))
@@ -262,9 +260,6 @@ class TrueChanceMCTS:
             # update chance node stats
             cn_i.value += G  # total return through chance node
 
-            # move one step back in return if you want step-wise discounting;
-            # here we keep simplest "same G" style like many toy MCTS examples.
-
         # build simulation record for JSON
         sim_record = {
             "path": [
@@ -294,8 +289,7 @@ class TrueChanceMCTS:
 
 
 # ----------------------------
-# Serialization & Visualization (includes chance nodes)
-# ----------------------------
+# Serialization & Visualization
 
 def serialize_tree_with_chance(node: DecisionNode, max_depth: int = 3) -> Optional[Dict[str, Any]]:
     if node is None or max_depth < 0:
@@ -412,8 +406,7 @@ def visualize_tree_with_chance(root: DecisionNode, filename: str, min_visits_to_
 
 
 # ----------------------------
-# Demo: run episode, save per-step PNG + JSON
-# ----------------------------
+# Main
 
 if __name__ == "__main__":
     out_dir = "frozen-lake/chance_tree"
@@ -433,7 +426,7 @@ if __name__ == "__main__":
     while not done and step < 100:
         action, root = mcts.search(initial_state=int(obs), iterations=1500)
 
-        # snapshot to JSON (includes decision+chance layers)
+        # JSON record
         snap = serialize_tree_with_chance(root, max_depth=2)
 
         step_data = {
