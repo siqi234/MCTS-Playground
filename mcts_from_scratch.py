@@ -116,6 +116,7 @@ class MCTS:
         return child_node
    
     def _simulate(self, state):
+        # Simulation
         current_state = state
         self.set_env_state(current_state)
         done = self.is_terminal(current_state)
@@ -148,6 +149,7 @@ class MCTS:
         return total_rewards
 
     def _backpropagate(self, node, reward):
+        # Backpropagation
         while node is not None:
             node.visits += 1
             node.value += reward
@@ -158,12 +160,12 @@ class MCTS:
 
 if __name__ == "__main__":
     real_env = gym.make('FrozenLake-v1', map_name="4x4", is_slippery=True, render_mode="human")
-
     sim_env = gym.make('FrozenLake-v1', map_name="4x4", is_slippery=True)
+
     obs, info = real_env.reset(seed=42)
     sim_env.reset(seed=42)
 
-    mcts = MCTS(sim_env, iterations=800)
+    mcts = MCTS(sim_env, iterations=1000)
     
     done = False
     step = 0
@@ -179,7 +181,7 @@ if __name__ == "__main__":
             if reward == 1:
                 print("Goal Reached!")
             else:
-                print("Fell in a hole.")
+                print("Fell in a hole.") 
 
     
     print(f"Episode finished after {step} steps with reward {reward}")
