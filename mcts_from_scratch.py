@@ -138,7 +138,7 @@ class MCTS:
                     total_rewards += -1.0
                 break
             
-            total_rewards -= 0.0
+            total_rewards -= 0.01
             depth += 1
             current_state = next_state
 
@@ -163,7 +163,7 @@ if __name__ == "__main__":
     obs, info = real_env.reset(seed=42)
     sim_env.reset(seed=42)
 
-    mcts = MCTS(sim_env, iterations=2000)
+    mcts = MCTS(sim_env, iterations=800)
     
     done = False
     step = 0
