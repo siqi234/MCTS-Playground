@@ -5,7 +5,7 @@ import random
 class DecisionNode:
     def __init__(self, state, parent=None):
         self.state = state
-        self.parent = parent
+        self.parent = parent # should be a chance node
 
         self.children = {} # {action_id: ChanceNode}, where action_id is the action taken from this desision node
         self.visits = 0
@@ -23,11 +23,11 @@ class DecisionNode:
         for action_id, chance_node in self.children.items():
 
             if chance_node.visits == 0:
-                return action_id
-            
-            exploit = chance_node.value / chance_node.visits
-            explore  = c_param * math.sqrt(math.log(self.visits)/(chance_node.visits))
-            score = exploit + explore
+                score = float('inf')  # prioritize unvisited nodes
+            else:
+                exploit = chance_node.value / chance_node.visits
+                explore  = c_param * math.sqrt(math.log(self.visits)/(chance_node.visits))
+                score = exploit + explore
 
             if score > best_score:
                 best_score = score
@@ -70,7 +70,7 @@ class MCTS:
         
         return root.best_child(c_param=0)
 
-    def _select(self, node):
+    def _select(self, node: DecisionNode):
         # Selection
         while not self.is_terminal(node.state):
             if not node.is_fully_expanded(self.action_space_size):
@@ -94,7 +94,7 @@ class MCTS:
 
         return node
     
-    def _expand(self, node):
+    def _expand(self, node: DecisionNode):
         # Expansion
         child_node = None
         tried_action = node.children.keys()
@@ -122,11 +122,11 @@ class MCTS:
         done = self.is_terminal(current_state)
 
         if done:
-            return 1.0 if current_state == 15 else -1.0
+            return 1.0 if current_state == 15 else -1.0 # hole: -1, goal: +1, else: 0
         
         total_rewards = 0.0
         depth = 0
-        max_depth = 50
+        max_depth = 100
 
         while not done and depth < max_depth:
             action = self.env.action_space.sample()
@@ -159,24 +159,30 @@ class MCTS:
         self.env.unwrapped.s = state
 
 if __name__ == "__main__":
+    # Create the environment both for real visualization and for simulation
     real_env = gym.make('FrozenLake-v1', map_name="4x4", is_slippery=True, render_mode="human")
     sim_env = gym.make('FrozenLake-v1', map_name="4x4", is_slippery=True)
 
+    # Reset both environments
     obs, info = real_env.reset(seed=42)
     sim_env.reset(seed=42)
 
+    # Run MCTS to get the best action from the initial state with 1000 iterations
     mcts = MCTS(sim_env, iterations=1000)
     
+    # Define the status of the game
     done = False
-    step = 0
     truncated = False
+    step = 0
 
     print("Start MCTS Agent on *Slippery* Frozen Lake...")
+    # Start the game loop
     while not (done or truncated):
-        action = mcts.search(obs)
-        obs, reward, done, truncated, info = real_env.step(action)
-        step += 1
+        action = mcts.search(obs) # Get the best action from the MCTS on the current state
+        obs, reward, done, truncated, info = real_env.step(action) # Take the action
+        step += 1 
 
+        # Check if win or not
         if done:
             if reward == 1:
                 print("Goal Reached!")
