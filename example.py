@@ -1,55 +1,98 @@
-import gymnasium as gym
+import math
+import random
 
-from gymcts.gymcts_agent import GymctsAgent
-from gymcts.gymcts_deepcopy_wrapper import DeepCopyMCTSGymEnvWrapper
 
-from gymcts.logger import log
+import gymnasium as gym  
 
-log.setLevel(20)
 
-from gymnasium.envs.toy_text.frozen_lake import FrozenLakeEnv
 
-if __name__ == '__main__':
-    log.debug("Starting example")
+class Node:
+    def __init__(self, parent=None, action=None, to_play=None):
+        self.parent = parent
+        self.action = action              
+        self.children = {}                
+        self.visits = 0
+        self.value_sum = 0.0              
+        self.untried_actions = [0, 1]     
+        self.to_play = to_play            
 
-    # 0. create the environment
-    env = gym.make('FrozenLake-v1', desc=None, map_name="4x4", is_slippery=False, render_mode="rgb_array")
-    env.reset()
+    def uct(self, c=1.4):
+        if self.visits == 0:
+            return float("inf")
+        exploit = self.value_sum / self.visits
+        explore = c * math.sqrt(math.log(self.parent.visits) / self.visits)
+        return exploit + explore
 
-    # 1. wrap the environment with the deep copy wrapper or a custom gymcts wrapper
-    env = DeepCopyMCTSGymEnvWrapper(env)
 
-    # 2. create the agent
-    agent = GymctsAgent(
-        env=env,
-        clear_mcts_tree_after_step=False,
-        render_tree_after_step=True,
-        number_of_simulations_per_step=200,
-        exclude_unvisited_nodes_from_render=True
-    )
+def get_env_state(env):
+    return env.unwrapped.state.copy()
 
-    # 3. solve the environment
-    actions = agent.solve()
+def set_env_state(env, state):
+    env.unwrapped.state = state.copy()
 
-    # 4. render the environment solution
-    env = gym.wrappers.RecordVideo(
-        env,
-        video_folder="./videos",
-        episode_trigger=lambda episode_id: True,
-        name_prefix="frozenlake_4x4"
-    )
-    env.reset()
+def rollout(env, depth_limit=50):
+    total = 0.0
+    for _ in range(depth_limit):
+        a = random.choice([0, 1])
+        obs, r, terminated, truncated, info = env.step(a)
+        total += r
+        if terminated or truncated:
+            break
+    return total
 
-    for a in actions:
-        obs, rew, term, trun, info = env.step(a)
+def mcts_iteration(env, root, depth_limit=50, c=1.4):
+    saved = get_env_state(env)
+
+    node = root
+
+    while len(node.untried_actions) == 0 and node.children:
+        node = max(node.children.values(), key=lambda ch: ch.uct(c))
+        obs, r, terminated, truncated, info = env.step(node.action)
+        if terminated or truncated:
+            break
+
+    if node.untried_actions:
+        a = node.untried_actions.pop()
+        obs, r, terminated, truncated, info = env.step(a)
+        child = Node(parent=node, action=a)
+        node.children[a] = child
+        node = child
+
+    value = 0.0
+    if not (terminated or truncated):
+        value = rollout(env, depth_limit=depth_limit)
+
+    while node is not None:
+        node.visits += 1
+        node.value_sum += value
+        node = node.parent
+
+    set_env_state(env, saved)
+
+def mcts_action(env, iterations=200, depth_limit=50, c=1.4):
+    root = Node()
+
+    for _ in range(iterations):
+        mcts_iteration(env, root, depth_limit=depth_limit, c=c)
+
+    best_action = max(root.children.items(), key=lambda kv: kv[1].visits)[0]
+    return best_action
+
+def main():
+    env = gym.make("CartPole-v1", render_mode="human")
+    obs, info = env.reset(seed=0)
+    total_reward = 0.0
+    for t in range(500):
+        a = mcts_action(env, iterations=300, depth_limit=60, c=1.4)
+
+        obs, r, terminated, truncated, info = env.step(a)
+        total_reward += r
+
+        if terminated or truncated:
+            break
+
     env.close()
+    print("Episode reward:", total_reward)
 
-    # 5. print the solution
-    # read the solution from the info provided by the RecordEpisodeStatistics wrapper (that DeepCopyMCTSGymEnvWrapper wraps internally)
-    episode_length = info["episode"]["l"]
-    episode_return = info["episode"]["r"]
-
-    if episode_return == 1.0:
-        print(f"Environment solved in {episode_length} steps.")
-    else:
-        print(f"Environment not solved in {episode_length} steps.")
+if __name__ == "__main__":
+    main() 

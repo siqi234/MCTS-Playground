@@ -146,7 +146,6 @@ class MCTS:
             node = node.parent
 
     def _get_next_state(self, state, action):
-            # Fetch transitions from the environment's model
             # transitions = [(probability, next_state, reward, terminated), ...]
             transitions = self.P[state][action]
             
@@ -159,20 +158,8 @@ class MCTS:
             return random.choices(states, weights=probs)[0]
 
     def _is_terminal(self, state):
-        # In 4x4 FrozenLake: Holes (H) and Goal (G) are terminal
-        # We check if there are no transitions or if we are at the goal
-        # (This logic depends on specific map, but standard map works like this)
-        # Easier check: Is it the goal (15) or a hole?
-        # For generality, we can check if the game ends in the env logic, 
-        # but here we hardcode 15 for the standard map goal.
         if state == 15: return True
-        
-        # Check if it is a hole (reward 0 and terminal)
-        # We can peek at any action to see if it leads to 'done' immediately with 0 reward
-        # But simpler: just run the simulation loop carefully.
-        # For this snippet, we treat 15 as the only positive terminal.
-        # If we fall in a hole, the simulation loop will continue or we can detect it.
-        # Let's assume standard map layout holes:
+
         holes = {5, 7, 11, 12} 
         return state in holes or state == 15
 
@@ -200,9 +187,6 @@ if __name__ == "__main__":
     print("Start MCTS Agent on *Non-Slippery* Frozen Lake...")
 
     while not done:
-        # SEARCH: Run MCTS to find the best action
-        # Note: We return only the action here (standard usage)
-        # If you are using the 'recorder' version, change this to: action, root = ...
         best_action, tree_root = mcts.search(initial_state=observation, iterations=1000)
 
         # Record the step's data for visualization
