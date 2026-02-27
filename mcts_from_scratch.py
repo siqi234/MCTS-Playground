@@ -27,7 +27,7 @@ class DecisionNode:
             else:
                 exploit = chance_node.value / chance_node.visits
                 explore  = c_param * math.sqrt(math.log(self.visits)/(chance_node.visits))
-                score = exploit + explore
+                score = exploit + explore # UCB score
 
             if score > best_score:
                 best_score = score
@@ -41,7 +41,7 @@ class ChanceNode:
         self.parent = parent # should be a decision node
         self.action_id = action_id 
 
-        self.children = {} # {next_state: DecisionNode}
+        self.children = {} # {next_state: DecisionNode}, e.g. {0: DecisionNode_0, ...}, should be a collection of decision nodes, where the next_state is determined by the environment after taking action_id from the current state (self.parent.state)
         self.visits = 0
         self.value = 0.0
 
@@ -52,7 +52,7 @@ class MCTS:
     def __init__(self, env, iterations=1000):
         self.env = env
         self.iterations = iterations
-        self.action_space_size = env.action_space.n
+        self.action_space_size = env.action_space.n # get the #of actions from the given environment 
 
     def is_terminal(self, state):
         if state == 15: 
@@ -61,7 +61,7 @@ class MCTS:
         return state in holes or state == 15
 
     def search(self, initial_state):
-        root = DecisionNode(state=initial_state)
+        root = DecisionNode(state=initial_state) # initialize the root node with the initial state
 
         for _ in range(self.iterations):
             node = self._select(root)
@@ -100,17 +100,17 @@ class MCTS:
         tried_action = node.children.keys()
         untried_actions = [a for a in range(self.action_space_size) if a not in tried_action]
 
-        action = random.choice(untried_actions)
+        action = random.choice(untried_actions) # randomly pick an untried action to expand
 
-        chance_node = ChanceNode(parent=node, action_id = action)
-        node.children[action] = chance_node
+        chance_node = ChanceNode(parent=node, action_id = action) # create a chance node for the selected action
+        node.children[action] = chance_node # add the chance node to the children of the parent decision node
 
         self.set_env_state(node.state)
 
-        next_state, reward, done, _, _ = self.env.step(action)
+        next_state, reward, done, _, _ = self.env.step(action) 
 
         next_node = DecisionNode(state=next_state, parent=chance_node)
-        chance_node.children[next_state] = next_node
+        # chance_node.children[next_state] = next_node
         child_node = next_node
 
         return child_node
@@ -129,7 +129,7 @@ class MCTS:
         max_depth = 100
 
         while not done and depth < max_depth:
-            action = self.env.action_space.sample()
+            action = self.env.action_space.sample() # get action from the environment action space
             next_state, reward, done, truncated, _ = self.env.step(action)
 
             if done:
@@ -153,10 +153,10 @@ class MCTS:
         while node is not None:
             node.visits += 1
             node.value += reward
-            node = node.parent
+            node = node.parent # move up to the parent node
 
     def set_env_state(self, state):
-        self.env.unwrapped.s = state
+        self.env.unwrapped.s = state # set the environment to the given state
 
 if __name__ == "__main__":
     # Create the environment both for real visualization and for simulation
