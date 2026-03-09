@@ -110,7 +110,7 @@ class MCTS:
         next_state, reward, done, _, _ = self.env.step(action) 
 
         next_node = DecisionNode(state=next_state, parent=chance_node)
-        # chance_node.children[next_state] = next_node
+        chance_node.children[next_state] = next_node
         child_node = next_node
 
         return child_node

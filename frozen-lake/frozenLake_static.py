@@ -173,7 +173,7 @@ class MCTS:
 # --- Main Game Loop ---
 if __name__ == "__main__":
     # Setup environment
-    env = gym.make('FrozenLake-v1', is_slippery=False, render_mode="human") # is_slippery=False for deterministic problems
+    env = gym.make('FrozenLake-v1', is_slippery=True, render_mode="human") # is_slippery=False for deterministic problems
     observation, info = env.reset()
 
     mcts = MCTS(env)
