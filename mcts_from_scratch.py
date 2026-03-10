@@ -1,6 +1,7 @@
 import gymnasium as gym
 import math
 import random
+import json
 
 class DecisionNode:
     def __init__(self, state, parent=None):
@@ -35,6 +36,26 @@ class DecisionNode:
         
         return best_child
     
+    def to_dict(self, current_depth=0, max_depth=3):
+        # convert the decision node to a dictionary format for visualization, including its state, visits, value, and children (chance nodes)
+        data = {
+            "type": "DecisionNode",
+            "state": int(self.state),
+            "visits": int(self.visits),
+            "value": float(self.value)
+        }
+        
+        # if we haven't reached the maximum depth, continue recursively traversing the ChanceNodes below
+        if current_depth < max_depth:
+            data["children"] = {
+                str(action_id): child.to_dict(current_depth + 1, max_depth)
+                for action_id, child in self.children.items()
+            }
+        else:
+            data["children"] = "Max depth reached"
+            
+        return data
+    
 class ChanceNode:
     def __init__(self, parent, action_id):
         self.state = parent.state # from the parent decision node
@@ -44,6 +65,25 @@ class ChanceNode:
         self.children = {} # {next_state: DecisionNode}, e.g. {0: DecisionNode_0, ...}, should be a collection of decision nodes, where the next_state is determined by the environment after taking action_id from the current state (self.parent.state)
         self.visits = 0
         self.value = 0.0
+
+    def to_dict(self, current_depth=0, max_depth=3):
+        # convert the chance node to a dictionary format for visualization, including its action_id, visits, value, and children (decision nodes)
+        data = {
+            "type": "ChanceNode",
+            "action_id": int(self.action_id),
+            "visits": int(self.visits),
+            "value": float(self.value) # the expected value is the core basis for decision explanation
+        }
+        
+        if current_depth < max_depth:
+            data["children"] = {
+                str(next_state): child.to_dict(current_depth + 1, max_depth)
+                for next_state, child in self.children.items()
+            }
+        else:
+            data["children"] = "Max depth reached"
+            
+        return data
 
 
 # MCTS
@@ -62,6 +102,7 @@ class MCTS:
 
     def search(self, initial_state):
         root = DecisionNode(state=initial_state) # initialize the root node with the initial state
+        self.root = root # store the root node for visualization
 
         for _ in range(self.iterations):
             node = self._select(root)
@@ -179,6 +220,13 @@ if __name__ == "__main__":
     # Start the game loop
     while not (done or truncated):
         action = mcts.search(obs) # Get the best action from the MCTS on the current state
+
+        # save the mcts tree after each step to a json file for visualization
+        tree_data = mcts.root.to_dict(current_depth=0, max_depth=3)
+        with open(f"mcts_trees/mcts_tree_step_{step}.json", "w") as f:
+            json.dump(tree_data, f, indent=4, ensure_ascii=False)
+        print(f"Saved MCTS tree for step {step} to mcts_trees/mcts_tree_step_{step}.json")
+
         obs, reward, done, truncated, info = real_env.step(action) # Take the action
         step += 1 
 
