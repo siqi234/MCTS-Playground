@@ -222,7 +222,7 @@ if __name__ == "__main__":
         action = mcts.search(obs) # Get the best action from the MCTS on the current state
 
         # save the mcts tree after each step to a json file for visualization
-        tree_data = mcts.root.to_dict(current_depth=0, max_depth=3)
+        tree_data = mcts.root.to_dict(current_depth=0, max_depth=4)
         with open(f"mcts_trees/mcts_tree_step_{step}.json", "w") as f:
             json.dump(tree_data, f, indent=4, ensure_ascii=False)
         print(f"Saved MCTS tree for step {step} to mcts_trees/mcts_tree_step_{step}.json")
