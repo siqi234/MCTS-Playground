@@ -1,9 +1,12 @@
+import os
 import openai
 import json
-
 from openai import OpenAI
+from dotenv import load_dotenv
 
-client = OpenAI(api_key="YOUR_API_KEY_HERE", 
+load_dotenv()
+
+client = OpenAI(api_key=os.getenv("GROQ_API_KEY"), 
                 base_url="https://api.groq.com/openai/v1")
 json_file = 'mcts_trees_ver2/mcts_tree_step_0.json'
 
